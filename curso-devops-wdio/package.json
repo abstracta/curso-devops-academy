@@ -1,0 +1,48 @@
+{
+  "name": "curso-devops-wdio",
+  "version": "1.0.0",
+  "description": "Proyecto de ejemplo para módulo sobre WebdriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./wdio.conf.js",
+    "test:smoke": "SET AMBIENTE=qa&&npm run test -- --suite smoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abstracta/curso-devops-academy.git"
+  },
+  "keywords": [
+    "browser",
+    "testing",
+    "automation",
+    "webdriverio",
+    "javascript",
+    "devops",
+    "CI",
+    "CD"
+  ],
+  "author": "Luis Zambra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abstracta/curso-devops-academy/issues"
+  },
+  "homepage": "https://github.com/abstracta/curso-devops-academy#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@wdio/allure-reporter": "^6.5.2",
+    "@wdio/local-runner": "^6.5.2",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/selenium-standalone-service": "^6.4.7",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "webdriverio": "^6.5.2"
+  },
+  "dependencies": {
+    "@wdio/cli": "^6.5.2"
+  }
+}
