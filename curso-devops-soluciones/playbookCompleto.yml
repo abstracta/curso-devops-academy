@@ -37,13 +37,7 @@
           service:
             name: jenkins
             state: started
-    
-    #Estas son dependencias puntuales para que actue como webserver
-        - name: Install Pip
-          apt:
-            name: python3-pip
-
-    #Aca terminan las dependencias para que actue como webserver
+            
         - name: Verify Jenkins service status
           command: service jenkins status warn=False
           register: jenkins_status
